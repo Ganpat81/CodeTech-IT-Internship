@@ -1,0 +1,134 @@
+/* ==============================
+   GLOBAL RESET & BASE STYLES
+   ============================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ==============================
+   HEADER
+   ============================== */
+
+.header {
+  background-color: #0d6efd;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+.header p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* ==============================
+   PRODUCT GRID
+   ============================== */
+
+.product-container {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+/* ==============================
+   PRODUCT CARD
+   ============================== */
+
+.product-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1.2rem;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.product-card img {
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 1rem;
+}
+
+.product-card h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0d6efd;
+  margin-bottom: 0.8rem;
+}
+
+/* ==============================
+   BUTTONS
+   ============================== */
+
+button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  background-color: #0d6efd;
+  color: white;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #084298;
+}
+
+/* ==============================
+   FOOTER
+   ============================== */
+
+.footer {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+.footer p {
+  margin-top: 0.8rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* ==============================
+   RESPONSIVE TWEAKS
+   ============================== */
+
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 1.6rem;
+  }
+
+  .product-container {
+    padding: 1rem;
+  }
+}

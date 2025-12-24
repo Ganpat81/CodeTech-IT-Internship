@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Learning Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<header>
+  <h1>Online Learning Platform</h1>
+  <p>Simple • Student Friendly • Working</p>
+</header>
+ 
+<div class="container">
+ 
+  <!-- Video Lesson -->
+  <div class="card">
+    <h2>Video Lesson</h2>
+    <video controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">     </video>
+    <button onclick="completeVideo()">Mark Video Completed</button>   </div>
+ 
+  <!-- Quiz -->
+  <div class="card">
+    <h2>Quiz</h2>
+    <p>What does HTML stand for?</p>
+ 
+    <label><input type="radio" name="q1" value="0"> Hyper Trainer Marking
+Language</label><br>
+    <label><input type="radio" name="q1" value="1"> Hyper Text Markup Language</label><br>
+    <label><input type="radio" name="q1" value="0"> High Text Machine Language</label><br>
+ 
+    <button onclick="submitQuiz()">Submit Quiz</button>
+    <p id="quizResult"></p>
+  </div>
+ 
+  <!-- Progress -->
+  <div class="card">
+    <h2>Progress</h2>
+    <div class="progress-box">
+      <div id="progressBar"></div>
+    </div>
+    <p id="progressText">0% Completed</p>
+  </div>
+ 
+</div>
+ 
+<footer>
+  © 2025 Online Learning Platform
+</footer>
+ 
+<script src="script.js"></script>
+</body>
+</html>
